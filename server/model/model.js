@@ -33,10 +33,6 @@ var schema = new mongoose.Schema({
     zip: {
         type: String,
         required: true,
-    },
-    image: {
-        type: String,
-        required: true,
     }
 })
 const Userdb = mongoose.model('userdb', schema);

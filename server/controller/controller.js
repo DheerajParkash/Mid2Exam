@@ -18,7 +18,7 @@ exports.create = (req, res) => {
         city: req.body.city,
         address: req.body.address,
         zip: req.body.zip,
-        image: req.body.user
+
     })
 
     // save user in the database
@@ -26,7 +26,8 @@ exports.create = (req, res) => {
         .save(user)
         .then(data => {
             //res.send(data)
-            res.redirect('/users');
+            console.log(data);
+            res.redirect('/');
         })
         .catch(err => {
             res.status(500).send({

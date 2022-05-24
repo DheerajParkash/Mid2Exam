@@ -1,51 +1,51 @@
-<% - include('include/_header') %>
+<%- include('included/_header') %>
 
     <form action="/api/users" method="POST" id="add_user">
         <div>
             <div class="row m-5">
                 <div class="col-4 m-2">
                     <div class="text-center">
-                        <img src="./smiley.png" id="user" class="rounded" alt="" width="100px">
+                        <img src="../smiley.png" id="user" class="rounded" alt="" width="100px">
                     </div>
                 </div>
                 <div class="col-7 m-3">
                     <div class="row">
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="text" class="form-control" id="name" value="" placeholder="Dheeraj">
+                            <input type="text" class="form-control" name="name" id="name" value="" placeholder="Dheeraj">
                             <label for="name">Full Name</label>
                         </div>
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="email" class="form-control" id="email" value="" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="email" name="email" value="" placeholder="name@example.com">
                             <label for="email">Email address</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="number" class="form-control" id="phone" value="" value="" placeholder="123456789">
+                            <input type="text" class="form-control" id="phone" name="phone" value="" placeholder="123456789">
                             <label for="phone">Phone Number</label>
                         </div>
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="text" class="form-control" id="country" value="" placeholder="Pakistan">
+                            <input type="text" class="form-control" id="country" name="country" value="" placeholder="Pakistan">
                             <label for="country">Country</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="text" class="form-control" id="state" value="" placeholder="Sindh">
+                            <input type="text" class="form-control" id="state" name="state" value="" placeholder="Sindh">
                             <label for="state">State/Region</label>
                         </div>
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="text" class="form-control" id="city" value="" placeholder="Sukkur">
+                            <input type="text" class="form-control" id="city" value="" name="city" placeholder="Sukkur">
                             <label for="city">City</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="text" class="form-control" id="address" value="" placeholder="Sukkur iba">
+                            <input type="text" class="form-control" id="address" name="address" value="" placeholder="Sukkur iba">
                             <label for="address">Address</label>
                         </div>
                         <div class="form-floating mb-3 col-5 m-2">
-                            <input type="text" class="form-control" id="zip" value="" placeholder="65200">
+                            <input type="text" class="form-control" id="zip" name="zip" value="" placeholder="65200">
                             <label for="zip">Zip/Code</label>
                         </div>
                     </div>
@@ -61,4 +61,4 @@
         </div>
     </form>
 
-    <% - include('include/_footer') %>
+    <%- include('included/_footer') %>
