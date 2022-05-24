@@ -1,0 +1,25 @@
+<% - include('include/_header') %>
+
+    <div class="">
+        <div class="row">
+            <div class="col-md-10 border border-1 m-3" id="cart">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">City</th>
+                            <th scope="col">PostCode </th>
+                            <th scope="col"> Delete</th>
+                            <th scope="col">Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% - include('include/_data') %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <% - include('include/_footer') %>

@@ -10,10 +10,35 @@ var schema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    gender: String,
-    status: String
+    phone: {
+        type: String,
+        required: true,
+    },
+    country: {
+        type: String,
+        required: true,
+    },
+    state: {
+        type: String,
+        required: true,
+    },
+    city: {
+        type: String,
+        required: true,
+    },
+    address: {
+        type: String,
+        required: true,
+    },
+    zip: {
+        type: String,
+        required: true,
+    },
+    image: {
+        type: String,
+        required: true,
+    }
 })
-
 const Userdb = mongoose.model('userdb', schema);
 
 module.exports = Userdb;
